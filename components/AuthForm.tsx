@@ -11,10 +11,10 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 
-import { Form } from "@/components/ui/form";
-import { Button } from "@/components/ui/button";
+import { Form } from "./ui/form";
+import { Button } from "./ui/button";
 
-import { signIn, signUp } from "@/lib/actions/auth.action";
+import { signUp, signIn } from "@/services/auth";
 import FormField from "./FormField";
 
 const authFormSchema = (type: FormType) => {
