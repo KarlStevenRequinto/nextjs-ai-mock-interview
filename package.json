@@ -1,5 +1,5 @@
 {
-  "name": "ai-prep-coach",
+  "name": "ready-set-hire",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,7 +15,6 @@
     "@radix-ui/react-slot": "^1.1.2",
     "@vapi-ai/web": "^2.2.4",
     "ai": "^4.1.61",
-    "ai-prep-coach": "file:",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
@@ -24,10 +23,10 @@
     "lucide-react": "^0.482.0",
     "next": "15.2.2",
     "next-themes": "^0.4.6",
-    "prepwise": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
+    "ready-set-hire": "file:",
     "sonner": "^2.0.1",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
