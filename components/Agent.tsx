@@ -44,15 +44,8 @@ const Agent = ({ userName, userId, interviewId, feedbackId, type, questions }: A
       }
     };
 
-    const onSpeechStart = () => {
-      console.log("speech start");
-      setIsSpeaking(true);
-    };
-
-    const onSpeechEnd = () => {
-      console.log("speech end");
-      setIsSpeaking(false);
-    };
+    const onSpeechStart = () => setIsSpeaking(true);
+    const onSpeechEnd = () => setIsSpeaking(false);
 
     const onError = (error: Error) => {
       console.log("Error:", error);
@@ -81,8 +74,6 @@ const Agent = ({ userName, userId, interviewId, feedbackId, type, questions }: A
     }
 
     const handleGenerateFeedback = async (messages: SavedMessage[]) => {
-      console.log("handleGenerateFeedback");
-
       const { success, feedbackId: id } = await createFeedback({
         interviewId: interviewId!,
         userId: userId!,
